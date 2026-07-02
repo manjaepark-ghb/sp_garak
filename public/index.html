@@ -10,29 +10,21 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Noto Sans KR',sans-serif;background:#f2f1ed;min-height:100vh;padding:32px 16px 64px}
 .container{max-width:820px;margin:0 auto}
-
-/* HEADER */
 .header{background:#0f1117;border-radius:14px;padding:26px 30px 22px;margin-bottom:16px}
 .header-top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
 .logo{font-size:20px;font-weight:700;color:#fff;font-family:Georgia,serif}
 .logo-sub{font-size:10px;letter-spacing:.12em;color:rgba(255,255,255,.35);text-transform:uppercase}
 .header-desc{font-size:13px;color:rgba(255,255,255,.5);line-height:1.7}
-
-/* CONFIG */
 .config{background:#fff;border:.5px solid #e8e5de;border-radius:12px;padding:20px 22px;margin-bottom:16px}
 .config-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
 .field-label{font-size:10px;font-weight:700;letter-spacing:.1em;color:#bbb;text-transform:uppercase;display:block;margin-bottom:7px}
 select{width:100%;padding:10px 12px;border-radius:8px;border:.5px solid #d8d4cb;font-size:13px;color:#111;background:#faf9f6;font-family:inherit;cursor:pointer;appearance:none}
 .gen-btn{width:100%;padding:13px 0;background:#0f1117;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit;transition:opacity .2s}
 .gen-btn:disabled{background:#ccc;cursor:not-allowed}
-
-/* LOADING */
 .loading-wrap{background:#fff;border:.5px solid #e8e5de;border-radius:12px;padding:40px;text-align:center}
 .spinner{width:30px;height:30px;border:2px solid #f0ede6;border-top-color:#0f1117;border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 14px}
 @keyframes spin{to{transform:rotate(360deg)}}
 .loading-step{font-size:13px;color:#888}
-
-/* RESULT BLOCKS */
 .result-stack{display:flex;flex-direction:column;gap:14px}
 .theme-block{background:#0f1117;border-radius:12px;padding:22px 24px}
 .block-label{font-size:10px;letter-spacing:.12em;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:10px}
@@ -40,43 +32,32 @@ select{width:100%;padding:10px 12px;border-radius:8px;border:.5px solid #d8d4cb;
 .theme-sub{font-size:13px;color:rgba(255,255,255,.5);margin-bottom:14px}
 .theme-desc{font-size:13px;color:rgba(255,255,255,.7);line-height:1.8}
 .season-note{margin-top:14px;background:rgba(245,166,35,.12);border-left:2.5px solid #f5a623;border-radius:0 6px 6px 0;padding:8px 12px;font-size:12px;color:#f5a623;line-height:1.6}
-
 .trend-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .trend-card{background:#fff;border:.5px solid #e8e5de;border-radius:10px;padding:16px 18px}
 .trend-num{font-size:10px;font-weight:700;letter-spacing:.1em;color:#bbb;text-transform:uppercase;margin-bottom:6px}
 .trend-title{font-size:14px;font-weight:700;color:#111;margin-bottom:8px}
-.trend-body{font-size:12px;color:#555;line-height:1.75;margin-bottom:10px}
+.trend-body{font-size:12px;color:#555;line-height:1.7;margin-bottom:10px}
 .trend-hook{background:#fffbf0;border-left:2px solid #f5a623;border-radius:0 4px 4px 0;padding:6px 10px;font-size:11px;color:#7a5500;line-height:1.5}
-
 .insight-block{background:#fff;border:.5px solid #e8e5de;border-radius:12px;padding:20px 24px}
 .insight-label{font-size:10px;font-weight:700;letter-spacing:.1em;color:#bbb;text-transform:uppercase;margin-bottom:12px}
 .insight-text{font-size:13px;color:#333;line-height:1.9;margin-bottom:14px}
 .insight-callout{background:#fffbf0;border-left:2.5px solid #f5a623;border-radius:0 6px 6px 0;padding:9px 12px;font-size:12px;color:#7a5500;line-height:1.6}
-
-/* MIX BLOCK */
 .mix-block{background:#fff;border:.5px solid #e8e5de;border-radius:12px;overflow:hidden}
 .mix-head{padding:16px 22px 12px;border-bottom:.5px solid #f3f0e9}
 .mix-head-label{font-size:10px;font-weight:700;letter-spacing:.1em;color:#bbb;text-transform:uppercase;margin-bottom:4px}
 .mix-reason{font-size:12px;color:#777;line-height:1.6}
-
-/* PKG TABS */
 .mix-tabs{display:flex;border-bottom:.5px solid #f3f0e9;overflow-x:auto}
 .mix-tab{padding:10px 18px;font-size:12px;font-weight:700;color:#bbb;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:all .15s;font-family:inherit;background:none;border-top:none;border-left:none;border-right:none}
 .mix-tab.active{color:#0f1117;border-bottom:2px solid #0f1117}
-
 .mix-panels{padding:14px 16px 16px}
 .mix-panel{display:none}
 .mix-panel.active{display:block}
-
-/* MEDIA TYPE GROUP */
 .media-type-group{margin-bottom:16px}
 .media-type-title{font-size:10px;font-weight:700;letter-spacing:.1em;color:#aaa;text-transform:uppercase;margin-bottom:8px;padding-bottom:6px;border-bottom:.5px solid #f3f0e9}
 .pkg-cards{display:flex;flex-direction:column;gap:8px}
-
 .pkg-card{border:.5px solid #e8e5de;border-radius:10px;padding:14px 16px;background:#fff;position:relative;transition:border-color .15s}
 .pkg-card.rec{border:1.5px solid #0f1117;background:#faf9f6}
 .priority-badge{position:absolute;top:12px;right:12px;font-size:10px;background:#0f1117;color:#fff;padding:2px 8px;border-radius:20px;font-weight:700}
-.pkg-sub{font-size:10px;font-weight:700;letter-spacing:.08em;color:#bbb;text-transform:uppercase;margin-bottom:4px}
 .pkg-name{font-size:13px;font-weight:700;color:#111;margin-bottom:6px}
 .pkg-desc{font-size:12px;color:#666;line-height:1.6;margin-bottom:10px}
 .pkg-stats{display:flex;gap:6px;flex-wrap:wrap}
@@ -84,12 +65,11 @@ select{width:100%;padding:10px 12px;border-radius:8px;border:.5px solid #d8d4cb;
 .stat-lbl{font-size:9px;color:#aaa;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
 .stat-val{font-size:11px;font-weight:700;color:#333;margin-top:1px}
 .pkg-add{margin-top:8px;font-size:11px;color:#999}
-.pkg-add span{color:#555;font-weight:500}
-
 .mix-tip{margin:0 0 4px;background:#f9f8f5;border:.5px solid #e8e5de;border-radius:8px;padding:10px 14px;font-size:12px;color:#555}
 .copy-btn{width:100%;padding:13px 0;background:#f3f0e9;color:#333;border:none;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;transition:all .2s;margin-top:4px}
 .copy-btn.done{background:#1a8c4e;color:#fff}
 .error-msg{margin-top:10px;font-size:12px;color:#c0392b;display:none}
+.pkg-updated{font-size:10px;color:#bbb;text-align:right;padding:6px 16px 0;}
 </style>
 </head>
 <body>
@@ -142,134 +122,42 @@ select{width:100%;padding:10px 12px;border-radius:8px;border:.5px solid #d8d4cb;
 </div>
 
 <script>
-/* ── 패키지 DB (PDF 정확 추출) ────────────────────────────── */
-const PKG = {
-  office: {
-    label: "프라임오피스 미디어",
-    basic: [
-      { name:"풀 패키지", buildings:"700개 빌딩 / 3,500기", price:"18,000만원/월", reach:"5,600,000회", perBuilding:"25.7만원/빌딩", sec:"15초 / 1슬롯", ops:"07:00~21:00 (14시간, 주말제외)", note:"하프 A+B 구성. 업종에 따라 최소개런티·단가 상이" },
-      { name:"하프 패키지 (A / B)", buildings:"350개 빌딩 / 1,750기", price:"10,000만원/월", reach:"2,800,000회", perBuilding:"28.5만원/빌딩", sec:"15초 / 1슬롯", ops:"07:00~21:00 (14시간, 주말제외)" },
-      { name:"쿼터 패키지 (1/2/3/4)", buildings:"175개 빌딩 / 875기", price:"6,000만원/월", reach:"1,400,000회", perBuilding:"34.2만원/빌딩", sec:"15초 / 1슬롯", ops:"07:00~21:00 (14시간, 주말제외)" },
-    ],
-    custom: [
-      { name:"병·의원 패키지", buildings:"180개 빌딩", price:"최소 3,000만원 (50개↑)", perBuilding:"60만원/빌딩", desc:"병원·약국 입주 빌딩 타겟", sec:"15초 / 1슬롯", ops:"07:00~21:00" },
-      { name:"메디컬 에스테틱 패키지", buildings:"85개 빌딩", price:"최소 3,000만원", perBuilding:"60만원/빌딩", desc:"피부과·성형외과 방문 고객 기반 뷰티·미용 관심층", sec:"15초 / 1슬롯", ops:"07:00~21:00" },
-      { name:"명품 패키지", buildings:"160개 빌딩", price:"최소 3,000만원", perBuilding:"60만원/빌딩", desc:"하이엔드 패션·주얼리 등 고소득층 집중 타겟", sec:"15초 / 1슬롯", ops:"07:00~21:00" },
-      { name:"퍼블릭 패키지", buildings:"280개 빌딩", price:"최소 3,000만원", perBuilding:"60만원/빌딩", desc:"업종·브랜드 제한 없이 폭넓은 인지도 확대", sec:"15초 / 1슬롯", ops:"07:00~21:00" },
-      { name:"지식산업센터 패키지", buildings:"180개 빌딩", price:"최소 3,000만원", perBuilding:"60만원/빌딩", desc:"제조·유통기업 밀집 지식산업센터 대상", sec:"15초 / 1슬롯", ops:"07:00~21:00" },
-      { name:"테크허브 패키지", buildings:"180개 빌딩", price:"최소 3,000만원", perBuilding:"60만원/빌딩", desc:"IT기업·스타트업 등 기업 직장인 타겟", sec:"15초 / 1슬롯", ops:"07:00~21:00" },
-      { name:"스타일 오피스 패키지", buildings:"165개 빌딩", price:"최소 3,000만원", perBuilding:"60만원/빌딩", desc:"2030F 타겟 패키지", sec:"15초 / 1슬롯", ops:"07:00~21:00" },
-      { name:"트렌드 스팟 FULL PKG", buildings:"70개 빌딩", price:"최소 3,000만원", perBuilding:"60만원/빌딩", desc:"성수·청담 등 유행 중심 상권 스팟 타겟", sec:"15초 / 1슬롯", ops:"07:00~21:00" },
-      { name:"편의점 패키지", buildings:"160개 빌딩", price:"최소 3,000만원", perBuilding:"60만원/빌딩", desc:"편의점 입주 빌딩 인구 대상 즉각적 구매 유도", sec:"15초 / 1슬롯", ops:"07:00~21:00" },
-      { name:"GBD 권역 (강남·역삼·삼성·선릉)", buildings:"140개 빌딩", price:"최소 3,000만원", perBuilding:"60만원/빌딩", desc:"국내 최대 상업권 업무지구", sec:"15초 / 1슬롯", ops:"07:00~21:00" },
-      { name:"CBD 권역 (광화문·종로·시청)", buildings:"75개 빌딩", price:"최소 3,000만원", perBuilding:"60만원/빌딩", desc:"전통적 도심 업무지구", sec:"15초 / 1슬롯", ops:"07:00~21:00" },
-      { name:"YBD 권역 (여의도·영등포·마포)", buildings:"60개 빌딩", price:"최소 3,000만원", perBuilding:"60만원/빌딩", desc:"은행·증권사 등 금융 밀집 업무지구", sec:"15초 / 1슬롯", ops:"07:00~21:00" },
-      { name:"BBD 권역 (판교·분당)", buildings:"35개 빌딩", price:"최소 3,000만원", perBuilding:"60만원/빌딩", desc:"IT기업 등 테크밸리 업무지구", sec:"15초 / 1슬롯", ops:"07:00~21:00" },
-      { name:"SBD 권역 (성수·성동)", buildings:"25개 빌딩", price:"최소 3,000만원", perBuilding:"60만원/빌딩", desc:"스타트업 등 트렌드 업무지구", sec:"15초 / 1슬롯", ops:"07:00~21:00" },
-      { name:"DMC 권역 (상암)", buildings:"30개 빌딩", price:"최소 3,000만원", perBuilding:"60만원/빌딩", desc:"미디어·콘텐츠 중심 업무지구", sec:"15초 / 1슬롯", ops:"07:00~21:00" },
-      { name:"G-valley 권역 (가산·구로)", buildings:"20개 빌딩", price:"최소 3,000만원", perBuilding:"60만원/빌딩", desc:"제조·IT 융합 업무지구", sec:"15초 / 1슬롯", ops:"07:00~21:00" },
-    ],
-    higheff: [
-      { name:"영화·공연 패키지", buildings:"최소 100개 ~ 최대 200개", price:"3,000~6,000만원", perBuilding:"30만원/빌딩·월·1슬롯", desc:"영화·공연 등 문화콘텐츠 광고주, 맞춤형 대비 50% 할인", sec:"15초 / 1슬롯", ops:"07:00~21:00" },
-      { name:"공공 패키지", buildings:"최소 120개 ~ 최대 200개", price:"3,000~5,000만원", perBuilding:"25만원/빌딩·월·1슬롯", desc:"정부부처·공공기관·비영리기관 광고주, 맞춤형 대비 58% 할인", sec:"15초 / 1슬롯", ops:"07:00~21:00" },
-      { name:"단기 집중 패키지", buildings:"최소 75개 ~ 최대 200개", price:"1,500~4,000만원", perBuilding:"20만원/빌딩·1주·2슬롯", desc:"일반 광고주 프로모션·이벤트 단기 운영 (최대 2주), 맞춤형 대비 33% 할인", sec:"15초 / 2슬롯", ops:"07:00~21:00" },
-    ]
-  },
-  living: {
-    label: "프라임리빙 미디어",
-    basic: [
-      { name:"풀 패키지", buildings:"70개 주거빌딩 / 520기", price:"2,000만원/월", reach:"1,560,000회", perBuilding:"기기당 일 100회 × 30일", sec:"15초 / 1슬롯", ops:"06:00~22:00 (16시간)", note:"E/V 외부 32~75inch·세로/가로형 / E/V 내부 21.5~29inch·세로/가로형" },
-      { name:"하프 패키지", buildings:"35개 주거빌딩 / 260기", price:"1,200만원/월", reach:"780,000회", perBuilding:"기기당 일 100회 × 30일", sec:"15초 / 1슬롯", ops:"06:00~22:00 (16시간)", note:"E/V 외부 32~75inch·세로/가로형 / E/V 내부 21.5~29inch·세로/가로형" },
-    ]
-  }
-};
-
-/* ── 업종별 추천 패키지 매핑 ─────────────────────────────── */
 const INDUSTRY_MAP = {
-  "F&B / 외식 프랜차이즈": {
-    office: ["편의점 패키지","퍼블릭 패키지","쿼터 패키지 (1/2/3/4)"],
-    living: [],
-    reason: "점심·퇴근 동선에서 즉각적 구매 욕구를 자극하는 편의점·퍼블릭 접점이 효과적입니다."
-  },
-  "패션": {
-    office: ["스타일 오피스 패키지","트렌드 스팟 FULL PKG","명품 패키지"],
-    living: ["풀 패키지"],
-    reason: "2030F 타겟과 고소득 입주민에게 반복 노출해 브랜드 선호도를 형성하는 조합이 유효합니다."
-  },
-  "뷰티": {
-    office: ["스타일 오피스 패키지","메디컬 에스테틱 패키지","트렌드 스팟 FULL PKG"],
-    living: ["풀 패키지"],
-    reason: "뷰티·에스테틱 관심층이 밀집한 스타일 오피스·메디컬 접점과 주거 채널을 함께 활용합니다."
-  },
-  "여행 & 숙박": {
-    office: ["퍼블릭 패키지","GBD 권역 (강남·역삼·삼성·선릉)","CBD 권역 (광화문·종로·시청)"],
-    living: ["풀 패키지"],
-    reason: "연봉 1억 이상 대기업 직장인과 고소득 입주민은 핵심 여행 소비층으로, 광역 인지도 확대와 주거 채널 병행이 효과적입니다."
-  },
-  "금융": {
-    office: ["YBD 권역 (여의도·영등포·마포)","GBD 권역 (강남·역삼·삼성·선릉)","하프 패키지 (A / B)"],
-    living: ["풀 패키지"],
-    reason: "금융 허브(YBD·GBD) 직장인에게 신뢰 기반 인지를 구축하고, 주거 채널에서 생활 밀착 소구를 병행합니다."
-  },
-  "키즈": {
-    office: ["스타일 오피스 패키지","퍼블릭 패키지"],
-    living: ["풀 패키지","하프 패키지"],
-    reason: "자녀를 둔 30~40대 직장인 부모는 오피스 동선과 주거 공간 모두에서 접점을 형성하는 것이 효과적입니다."
-  },
-  "주류": {
-    office: ["편의점 패키지","쿼터 패키지 (1/2/3/4)","트렌드 스팟 FULL PKG"],
-    living: [],
-    reason: "퇴근 동선 편의점·트렌드 상권 접점에서 즉각적 구매 연결을 유도하는 조합이 최적입니다. (주류 업종은 소재 심의 후 집행 가능)"
-  },
-  "커머스 (쇼핑 플랫폼)": {
-    office: ["퍼블릭 패키지","하프 패키지 (A / B)","단기 집중 패키지"],
-    living: ["풀 패키지"],
-    reason: "최대 도달을 목표로 퍼블릭·하프 패키지로 인지도를 확보하고, 시즌 프로모션엔 단기 집중을 병행합니다."
-  },
-  "제약 / 건강기능식품": {
-    office: ["병·의원 패키지","퍼블릭 패키지","쿼터 패키지 (1/2/3/4)"],
-    living: ["풀 패키지"],
-    reason: "병원·약국 입주 빌딩에서 의료 접점을 만들고, 주거 채널에서 건강 관심층에게 반복 노출합니다."
-  },
-  "콘텐츠": {
-    office: ["영화·공연 패키지","트렌드 스팟 FULL PKG","퍼블릭 패키지"],
-    living: ["풀 패키지"],
-    reason: "영화·공연은 할인율 50%의 고효율 패키지를 활용하고, 트렌드 상권 직장인과 주거 채널을 병행합니다."
-  },
-  "자동차": {
-    office: ["명품 패키지","GBD 권역 (강남·역삼·삼성·선릉)","하프 패키지 (A / B)"],
-    living: ["풀 패키지"],
-    reason: "구매력 높은 고소득층이 밀집한 GBD·명품 접점과 고급 주거 단지 채널의 시너지가 높습니다."
-  },
-  "리빙 / 가전 / 가구": {
-    office: ["쿼터 패키지 (1/2/3/4)","트렌드 스팟 FULL PKG","스타일 오피스 패키지"],
-    living: ["풀 패키지","하프 패키지"],
-    reason: "이사·신혼 시즌에 주거 채널로 교체 수요를 공략하고, 오피스 채널에서 브랜드 인지를 사전 구축합니다."
-  },
-  "게임": {
-    office: ["테크허브 패키지","BBD 권역 (판교·분당)","스타일 오피스 패키지"],
-    living: [],
-    reason: "IT·테크 직장인이 밀집한 테크허브·판교 접점에서 핵심 게임 소비층에게 집중 노출합니다. (게임 업종은 소재 심의 후 집행 가능)"
-  },
-  "시즈널리티": {
-    office: ["단기 집중 패키지","퍼블릭 패키지","쿼터 패키지 (1/2/3/4)"],
-    living: ["하프 패키지"],
-    reason: "시즈널 이슈는 단기 집중 패키지로 빠른 도달을 확보하고, 퍼블릭·리빙 채널로 넓은 커버리지를 병행합니다."
-  }
+  "F&B / 외식 프랜차이즈": { office: ["편의점 패키지","퍼블릭 패키지","쿼터 패키지 (1/2/3/4)"], living: [], reason: "점심·퇴근 동선에서 즉각적 구매 욕구를 자극하는 편의점·퍼블릭 접점이 효과적입니다." },
+  "패션": { office: ["스타일 오피스 패키지","트렌드 스팟 FULL PKG","명품 패키지"], living: ["풀 패키지"], reason: "2030F 타겟과 고소득 입주민에게 반복 노출해 브랜드 선호도를 형성하는 조합이 유효합니다." },
+  "뷰티": { office: ["스타일 오피스 패키지","메디컬 에스테틱 패키지","트렌드 스팟 FULL PKG"], living: ["풀 패키지"], reason: "뷰티·에스테틱 관심층이 밀집한 스타일 오피스·메디컬 접점과 주거 채널을 함께 활용합니다." },
+  "여행 & 숙박": { office: ["퍼블릭 패키지","GBD 권역 (강남·역삼·삼성·선릉)","CBD 권역 (광화문·종로·시청)"], living: ["풀 패키지"], reason: "연봉 1억 이상 대기업 직장인과 고소득 입주민은 핵심 여행 소비층으로, 광역 인지도 확대와 주거 채널 병행이 효과적입니다." },
+  "금융": { office: ["YBD 권역 (여의도·영등포·마포)","GBD 권역 (강남·역삼·삼성·선릉)","하프 패키지 (A / B)"], living: ["풀 패키지"], reason: "금융 허브(YBD·GBD) 직장인에게 신뢰 기반 인지를 구축하고, 주거 채널에서 생활 밀착 소구를 병행합니다." },
+  "키즈": { office: ["스타일 오피스 패키지","퍼블릭 패키지"], living: ["풀 패키지","하프 패키지"], reason: "자녀를 둔 30~40대 직장인 부모는 오피스 동선과 주거 공간 모두에서 접점을 형성하는 것이 효과적입니다." },
+  "주류": { office: ["편의점 패키지","쿼터 패키지 (1/2/3/4)","트렌드 스팟 FULL PKG"], living: [], reason: "퇴근 동선 편의점·트렌드 상권 접점에서 즉각적 구매 연결을 유도하는 조합이 최적입니다. (주류 업종은 소재 심의 후 집행 가능)" },
+  "커머스 (쇼핑 플랫폼)": { office: ["퍼블릭 패키지","하프 패키지 (A / B)","단기 집중 패키지"], living: ["풀 패키지"], reason: "최대 도달을 목표로 퍼블릭·하프 패키지로 인지도를 확보하고, 시즌 프로모션엔 단기 집중을 병행합니다." },
+  "제약 / 건강기능식품": { office: ["병·의원 패키지","퍼블릭 패키지","쿼터 패키지 (1/2/3/4)"], living: ["풀 패키지"], reason: "병원·약국 입주 빌딩에서 의료 접점을 만들고, 주거 채널에서 건강 관심층에게 반복 노출합니다." },
+  "콘텐츠": { office: ["영화·공연 패키지","트렌드 스팟 FULL PKG","퍼블릭 패키지"], living: ["풀 패키지"], reason: "영화·공연은 할인율 50%의 고효율 패키지를 활용하고, 트렌드 상권 직장인과 주거 채널을 병행합니다." },
+  "자동차": { office: ["명품 패키지","GBD 권역 (강남·역삼·삼성·선릉)","하프 패키지 (A / B)"], living: ["풀 패키지"], reason: "구매력 높은 고소득층이 밀집한 GBD·명품 접점과 고급 주거 단지 채널의 시너지가 높습니다." },
+  "리빙 / 가전 / 가구": { office: ["쿼터 패키지 (1/2/3/4)","트렌드 스팟 FULL PKG","스타일 오피스 패키지"], living: ["풀 패키지","하프 패키지"], reason: "이사·신혼 시즌에 주거 채널로 교체 수요를 공략하고, 오피스 채널에서 브랜드 인지를 사전 구축합니다." },
+  "게임": { office: ["테크허브 패키지","BBD 권역 (판교·분당)","스타일 오피스 패키지"], living: [], reason: "IT·테크 직장인이 밀집한 테크허브·판교 접점에서 핵심 게임 소비층에게 집중 노출합니다. (게임 업종은 소재 심의 후 집행 가능)" },
+  "시즈널리티": { office: ["단기 집중 패키지","퍼블릭 패키지","쿼터 패키지 (1/2/3/4)"], living: ["하프 패키지"], reason: "시즈널 이슈는 단기 집중 패키지로 빠른 도달을 확보하고, 퍼블릭·리빙 채널로 넓은 커버리지를 병행합니다." }
 };
 
-/* ── 헬퍼 ──────────────────────────────────────────────── */
+let PKG = null;
+
+async function loadPKG() {
+  if (PKG) return PKG;
+  const res = await fetch('/pkg-data.json');
+  PKG = await res.json();
+  return PKG;
+}
+
 document.getElementById('industry').addEventListener('change', function(){
   document.getElementById('genBtn').disabled = !this.value;
   document.getElementById('resultArea').innerHTML = '';
 });
 
 async function callClaude(prompt){
-  // Vercel 서버 함수를 통해 API 키를 안전하게 사용
   const res = await fetch("/api/generate", {
     method: "POST",
     headers: {"Content-Type": "application/json"},
-    body: JSON.stringify({ prompt: prompt })
+    body: JSON.stringify({ prompt })
   });
   if(!res.ok){
     const errBody = await res.text();
@@ -282,13 +170,10 @@ async function callClaude(prompt){
 }
 
 function extractJSON(raw){
-  // 1) ```json 블록
   let m = raw.match(/```json\s*([\s\S]*?)```/);
   if(m) return m[1].trim();
-  // 2) ``` 블록
   m = raw.match(/```\s*([\s\S]*?)```/);
   if(m) return m[1].trim();
-  // 3) { ... } 가장 바깥 추출
   const start = raw.indexOf('{');
   const end = raw.lastIndexOf('}');
   if(start !== -1 && end > start) return raw.slice(start, end + 1);
@@ -296,21 +181,17 @@ function extractJSON(raw){
 }
 
 function safeParseJSON(raw){
-  // 1차: 그대로 파싱
   try { return JSON.parse(raw); } catch(e1){}
-  // 2차: 문자열 값 안의 리터럴 줄바꿈을 \n 이스케이프로 치환
   try {
     var fixed = raw.replace(/"((?:[^"\\]|\\.)*)"/g, function(match, inner){
       return '"' + inner.replace(/\r\n/g,'\\n').replace(/\n/g,'\\n').replace(/\r/g,'\\n').replace(/\t/g,'\\t') + '"';
     });
     return JSON.parse(fixed);
   } catch(e2){}
-  // 3차: 모든 제어문자를 공백으로 치환
   try {
     var fixed2 = raw.replace(/[\x00-\x09\x0B\x0C\x0E-\x1F\x7F]/g,' ').replace(/\r?\n/g,' ');
     return JSON.parse(fixed2);
   } catch(e3){}
-  // 4차: 전체 줄바꿈 제거 후 파싱
   try { return JSON.parse(raw.replace(/[\r\n]+/g,' ')); } catch(e4){}
   return null;
 }
@@ -330,38 +211,46 @@ async function generate(){
   area.innerHTML = '';
   btn.disabled = true;
   btn.textContent = '트렌드 분석 중...';
-  area.innerHTML = '<div class="loading-wrap"><div class="spinner"></div><p class="loading-step" id="lstep">AI가 마케팅 인사이트를 분석하고 있습니다...</p></div>';
+  area.innerHTML = '<div class="loading-wrap"><div class="spinner"></div><p class="loading-step">AI가 마케팅 인사이트를 분석하고 있습니다...</p></div>';
 
   try {
-    // 프롬프트 — 백틱/큰따옴표 없이 일반 문자열 연결로 구성
+    const pkg = await loadPKG();
+
+    const now = new Date();
+    const currentMonth = now.getMonth() + 1;
+    const currentYear = now.getFullYear();
+
     const prompt = [
-      '당신은 공간 미디어 광고 전략 컨설턴트입니다.',
-      '한국 ' + industry + ' 업종의 최근 ' + months + '개월 트렌드를 분석하세요.',
+      '한국 ' + industry + ' 업종의 최근 ' + months + '개월 소비 트렌드를 분석하라.',
+      '현재 시점은 ' + currentYear + '년 ' + currentMonth + '월이다.',
       '',
-      '[트렌드 선별 기준 - 마케팅 인사이트 중심]',
-      '1. 소비자 행동 변화 중 구매 의사결정에 직접 영향을 주는 것만 선별 (단순 현상 나열 금지)',
-      '2. 각 트렌드는 실제 브랜드 캠페인 사례, 검색량 변화, 판매 수치 등 구체적 근거 포함',
-      '3. 각 트렌드마다 타겟이 언제/어디서/왜 광고에 노출되어야 하는지 명시',
-      '4. 광고주가 지금 집행해야 하는 이유로 직접 활용 가능한 논거로 작성',
-      '5. hook은 프라임오피스(직장인 엘리베이터 로비)나 프라임리빙(고급 주거빌딩) 미디어와 연결되는 공간 동선 시간대 근거 포함',
+      '[themeDesc 작성 규칙 - 반드시 준수]',
+      '- 순수 소비자 행동·시장 변화 데이터만 서술할 것',
+      '- 광고, 미디어, 엘리베이터, 공간 매체 언급 완전 금지',
+      '- 실제 수치나 조사 결과를 포함한 2문장으로 작성',
+      '',
+      '[trend body 작성 규칙]',
+      '- 각 트렌드 본문은 핵심 내용만 담아 1~2문장으로 간결하게 작성',
+      '- 브랜드명 또는 수치 1개 포함',
+      '- 미디어·광고 매체 언급 금지',
       '',
       '[출력 규칙 - 반드시 준수]',
       '- 반드시 유효한 JSON 객체 하나만 출력할 것',
-      '- 설명 문장, 마크다운, 코드블록 없이 { 로 시작해서 } 로 끝낼 것',
-      '- JSON 문자열 값 안에 큰따옴표 사용 금지 (작은따옴표 또는 다른 표현으로 대체)',
-      '- 각 문자열 값은 반드시 한 줄로 작성 (줄바꿈 금지)',
+      '- { 로 시작해서 } 로 끝낼 것. 설명 문장·마크다운·코드블록 없음',
+      '- JSON 문자열 값 안에 큰따옴표 사용 금지',
+      '- 각 문자열 값은 한 줄로 작성 (줄바꿈 금지)',
       '',
-      '[출력할 JSON 키 구조]',
+      '[출력 JSON 구조]',
       'mainTheme: 핵심 테마 15자 이내',
       'subTheme: 부제 20자 이내',
-      'themeDesc: 광고주가 반드시 알아야 할 소비자 행동 변화 2~3문장. 수치나 사례 포함.',
-      'trends: 아래 구조의 객체 정확히 4개 배열',
-      '  - title: 트렌드명 10자 이내',
-      '  - body: 구매 전환에 영향을 주는 이유 2~3문장. 실제 브랜드/수치/사례 포함. 광고주 관점 기회 포인트로 마무리.',
-      '  - hook: 직장인 출퇴근 점심 동선 또는 고급 주거 공간과 연결되는 집행 포인트 30자 이내 (이모지 없이)',
-      'seasonality: 지금 이 시점 5~6월에 집행해야 하는 시즈널 근거 1~2문장. 소비 피크 포함.',
-      'newsletterInsight: 마케터 미디어 담당자 대상 인사이트 3~4문장. 프라임오피스 리빙 미디어와 맞아떨어지는 이유를 논거로 연결.',
-      'callout: 이 업종 광고주에게 전하는 공간 미디어 집행 핵심 메시지 1문장 40자 이내 (이모지 없이)',
+      'themeDesc: 소비자 행동 변화 데이터 중심 2문장. 수치 포함. 광고·매체 언급 금지.',
+      'trends: 아래 구조 객체 정확히 4개 배열',
+      '  title: 트렌드명 10자 이내',
+      '  body: 핵심 내용 1~2문장. 브랜드명 또는 수치 1개 포함.',
+      '  hook: 직장인 출퇴근·점심 동선 또는 고급 주거 공간과 연결되는 집행 포인트 30자 이내 (이모지 없이)',
+      'seasonality: ' + currentYear + '년 ' + currentMonth + '월 현시점 집행 근거 1문장. 소비 피크 포함.',
+      'newsletterInsight: 마케터 대상 인사이트 2~3문장. 공간 미디어와의 연결 논거 포함.',
+      'callout: 광고주에게 전하는 집행 핵심 메시지 1문장 40자 이내 (이모지 없이)',
       '',
       '지금 바로 JSON만 출력:'
     ].join('\n');
@@ -371,7 +260,6 @@ async function generate(){
     const trend = safeParseJSON(jsonStr);
 
     if(!trend || typeof trend !== 'object'){
-      // 화면에 원본 응답 표시해서 진단 가능하게
       errEl.innerHTML = '파싱 실패. API 응답 원문:<br><pre style="font-size:11px;white-space:pre-wrap;background:#f9f8f5;padding:8px;border-radius:6px;max-height:200px;overflow:auto;">' + raw.slice(0, 800) + '</pre>';
       errEl.style.display = 'block';
       btn.textContent = '✦ 다시 생성';
@@ -380,8 +268,8 @@ async function generate(){
     }
 
     const map = INDUSTRY_MAP[industry] || {office:[], living:[], reason:''};
-    lastResult = {trend, map, industry};
-    renderResult(trend, map, industry);
+    lastResult = {trend, map, industry, pkg};
+    renderResult(trend, map, industry, pkg);
     btn.textContent = '✦ 다시 생성';
     btn.disabled = false;
 
@@ -394,100 +282,86 @@ async function generate(){
   }
 }
 
-function renderResult(trend, map, industry){
+function renderResult(trend, map, industry, pkg){
   const officeRec = map.office || [];
   const livingRec = map.living || [];
 
-  function getPkg(list, name){ return list.find(p=>p.name===name); }
-
-  function renderPkgCard(pkg, isRec, isPriority){
-    if(!pkg) return '';
-    return `<div class="pkg-card ${isRec?'rec':''}">
-      ${isPriority?'<span class="priority-badge">우선 추천</span>':''}
-      <div class="pkg-name">${pkg.name}</div>
-      ${pkg.desc?`<div class="pkg-desc">${pkg.desc}</div>`:''}
-      <div class="pkg-stats">
-        ${pkg.buildings?`<div class="stat-pill"><div class="stat-lbl">빌딩·기기</div><div class="stat-val">${pkg.buildings}</div></div>`:''}
-        ${pkg.sec?`<div class="stat-pill"><div class="stat-lbl">구좌</div><div class="stat-val">${pkg.sec}</div></div>`:''}
-        ${pkg.reach?`<div class="stat-pill"><div class="stat-lbl">보장 노출</div><div class="stat-val">${pkg.reach}</div></div>`:''}
-        ${pkg.price?`<div class="stat-pill"><div class="stat-lbl">광고비</div><div class="stat-val">${pkg.price}</div></div>`:''}
-        ${pkg.perBuilding?`<div class="stat-pill"><div class="stat-lbl">빌딩 단가</div><div class="stat-val">${pkg.perBuilding}</div></div>`:''}
-        ${pkg.ops?`<div class="stat-pill"><div class="stat-lbl">운영시간</div><div class="stat-val">${pkg.ops}</div></div>`:''}
-      </div>
-      ${pkg.note?`<div class="pkg-add" style="margin-top:8px;font-size:11px;color:#999;">${pkg.note}</div>`:''}
-    </div>`;
+  function renderPkgCard(p, isRec, isPriority){
+    if(!p) return '';
+    return '<div class="pkg-card ' + (isRec?'rec':'') + '">'
+      + (isPriority?'<span class="priority-badge">우선 추천</span>':'')
+      + '<div class="pkg-name">' + p.name + '</div>'
+      + (p.desc?'<div class="pkg-desc">' + p.desc + '</div>':'')
+      + '<div class="pkg-stats">'
+      + (p.buildings?'<div class="stat-pill"><div class="stat-lbl">빌딩·기기</div><div class="stat-val">' + p.buildings + '</div></div>':'')
+      + (p.sec?'<div class="stat-pill"><div class="stat-lbl">구좌</div><div class="stat-val">' + p.sec + '</div></div>':'')
+      + (p.reach?'<div class="stat-pill"><div class="stat-lbl">보장 노출</div><div class="stat-val">' + p.reach + '</div></div>':'')
+      + (p.price?'<div class="stat-pill"><div class="stat-lbl">광고비</div><div class="stat-val">' + p.price + '</div></div>':'')
+      + (p.perBuilding?'<div class="stat-pill"><div class="stat-lbl">빌딩 단가</div><div class="stat-val">' + p.perBuilding + '</div></div>':'')
+      + (p.ops?'<div class="stat-pill"><div class="stat-lbl">운영시간</div><div class="stat-val">' + p.ops + '</div></div>':'')
+      + '</div>'
+      + (p.note?'<div class="pkg-add">' + p.note + '</div>':'')
+      + '</div>';
   }
 
-  /* office panels */
-  function buildOfficePanel(pkgList, label){
-    const allPkgs = pkgList;
-    if(!allPkgs.length) return '';
-    return allPkgs.map((pkg,i)=>{
-      const isRec = officeRec.includes(pkg.name);
-      const isPriority = i===0 && isRec;
-      return renderPkgCard(pkg, isRec, isPriority);
-    }).join('');
-  }
+  const officeBasicHTML = '<div class="media-type-group"><div class="media-type-title">기본 패키지 — Full / Half / Quarter</div><div class="pkg-cards">'
+    + pkg.office.basic.map((p,i) => renderPkgCard(p, officeRec.includes(p.name), i===0 && officeRec.includes(p.name))).join('')
+    + '</div></div>';
+  const officeCustomHTML = '<div class="media-type-group"><div class="media-type-title">맞춤형 패키지 — Target / Geography</div><div class="pkg-cards">'
+    + pkg.office.custom.map(p => renderPkgCard(p, officeRec.includes(p.name), officeRec[0]===p.name)).join('')
+    + '</div></div>';
+  const officeHighHTML = '<div class="media-type-group"><div class="media-type-title">고효율 패키지 — Culture / Public / Short-term</div><div class="pkg-cards">'
+    + pkg.office.higheff.map(p => renderPkgCard(p, officeRec.includes(p.name), false)).join('')
+    + '</div></div>';
+  const livingHTML = pkg.living.basic.map((p,i) => renderPkgCard(p, livingRec.includes(p.name), i===0 && livingRec.includes(p.name))).join('');
 
-  /* 오피스 탭 구성 */
-  const officeBasicHTML = `<div class="media-type-group"><div class="media-type-title">기본 패키지 — Full / Half / Quarter</div><div class="pkg-cards">${PKG.office.basic.map((p,i)=>{const isRec=officeRec.includes(p.name);return renderPkgCard(p,isRec,i===0&&isRec);}).join('')}</div></div>`;
-  const officeCustomHTML = `<div class="media-type-group"><div class="media-type-title">맞춤형 패키지 — Target / Geography</div><div class="pkg-cards">${PKG.office.custom.map(p=>{const isRec=officeRec.includes(p.name);return renderPkgCard(p,isRec,officeRec[0]===p.name);}).join('')}</div></div>`;
-  const officeHighHTML = `<div class="media-type-group"><div class="media-type-title">고효율 패키지 — Culture / Public / Short-term</div><div class="pkg-cards">${PKG.office.higheff.map(p=>{const isRec=officeRec.includes(p.name);return renderPkgCard(p,isRec,false);}).join('')}</div></div>`;
+  const updatedLabel = pkg._updated ? '단가 기준: ' + pkg._updated.slice(0,2) + '년 ' + pkg._updated.slice(2) + '월' : '';
 
-  const livingHTML = PKG.living.basic.map((p,i)=>{const isRec=livingRec.includes(p.name);return renderPkgCard(p,isRec,i===0&&isRec);}).join('');
+  const html = '<div class="result-stack">'
 
-  const html=`<div class="result-stack">
+    + '<div class="theme-block">'
+    + '<div class="block-label">이번 시즌 핵심 테마</div>'
+    + '<div class="theme-title">' + (trend.mainTheme||'') + '</div>'
+    + '<div class="theme-sub">' + (trend.subTheme||'') + '</div>'
+    + '<div class="theme-desc">' + (trend.themeDesc||'') + '</div>'
+    + (trend.seasonality?'<div class="season-note">📅 ' + trend.seasonality + '</div>':'')
+    + '</div>'
 
-  <div class="theme-block">
-    <div class="block-label">이번 시즌 핵심 테마</div>
-    <div class="theme-title">${trend.mainTheme||''}</div>
-    <div class="theme-sub">${trend.subTheme||''}</div>
-    <div class="theme-desc">${trend.themeDesc||''}</div>
-    ${trend.seasonality?`<div class="season-note">📅 ${trend.seasonality}</div>`:''}
-  </div>
+    + '<div class="trend-grid">'
+    + (trend.trends||[]).map((tr,i) =>
+        '<div class="trend-card">'
+        + '<div class="trend-num">Trend 0' + (i+1) + '</div>'
+        + '<div class="trend-title">' + tr.title + '</div>'
+        + '<div class="trend-body">' + tr.body + '</div>'
+        + '<div class="trend-hook">' + tr.hook + '</div>'
+        + '</div>'
+      ).join('')
+    + '</div>'
 
-  <div class="trend-grid">
-    ${(trend.trends||[]).map((tr,i)=>`<div class="trend-card">
-      <div class="trend-num">Trend 0${i+1}</div>
-      <div class="trend-title">${tr.title}</div>
-      <div class="trend-body">${tr.body}</div>
-      <div class="trend-hook">${tr.hook}</div>
-    </div>`).join('')}
-  </div>
+    + '<div class="insight-block">'
+    + '<div class="insight-label">뉴스레터 인사이트 초안</div>'
+    + '<div class="insight-text">' + (trend.newsletterInsight||'') + '</div>'
+    + '<div class="insight-callout">' + (trend.callout||'') + '</div>'
+    + '</div>'
 
-  <div class="insight-block">
-    <div class="insight-label">뉴스레터 인사이트 초안</div>
-    <div class="insight-text">${trend.newsletterInsight||''}</div>
-    <div class="insight-callout">${trend.callout||''}</div>
-  </div>
+    + '<div class="mix-block">'
+    + '<div class="mix-head"><div class="mix-head-label">추천 미디어 믹스</div><div class="mix-reason">' + (map.reason||'') + '</div></div>'
+    + '<div class="mix-tabs">'
+    + '<button class="mix-tab active" onclick="switchTab(this,\'tab-office\')">프라임오피스 미디어</button>'
+    + '<button class="mix-tab" onclick="switchTab(this,\'tab-living\')">프라임리빙 미디어</button>'
+    + '</div>'
+    + '<div class="mix-panels">'
+    + '<div class="mix-panel active" id="tab-office">' + officeBasicHTML + officeCustomHTML + officeHighHTML + '</div>'
+    + '<div class="mix-panel" id="tab-living">'
+    + '<div class="media-type-group"><div class="media-type-title">기본 패키지 — Full / Half</div><div class="pkg-cards">' + livingHTML + '</div></div>'
+    + '<div class="mix-tip">📍 프라임리빙은 강남·여의도·용산·성수 등 서울 중심지 프리미엄 주거빌딩 70개동 520기 운영. 일 평균 100,000명 유동인구 시청. (2607 기준)</div>'
+    + '</div>'
+    + '</div>'
+    + (updatedLabel ? '<div class="pkg-updated">' + updatedLabel + '</div>' : '')
+    + '</div>'
 
-  <div class="mix-block">
-    <div class="mix-head">
-      <div class="mix-head-label">추천 미디어 믹스</div>
-      <div class="mix-reason">${map.reason||''}</div>
-    </div>
-    <div class="mix-tabs">
-      <button class="mix-tab active" onclick="switchTab(this,'tab-office')">프라임오피스 미디어</button>
-      <button class="mix-tab" onclick="switchTab(this,'tab-living')">프라임리빙 미디어</button>
-    </div>
-    <div class="mix-panels">
-      <div class="mix-panel active" id="tab-office">
-        ${officeBasicHTML}
-        ${officeCustomHTML}
-        ${officeHighHTML}
-      </div>
-      <div class="mix-panel" id="tab-living">
-        <div class="media-type-group">
-          <div class="media-type-title">기본 패키지 — Full / Half</div>
-          <div class="pkg-cards">${livingHTML}</div>
-        </div>
-        <div class="mix-tip" style="margin-top:10px;">📍 프라임리빙은 강남·여의도·용산·성수 등 서울 중심지 프리미엄 주거빌딩 73개동 551기 운영. 일 평균 100,000명 유동인구 시청. (2026.06 기준)</div>
-      </div>
-    </div>
-  </div>
-
-  <button class="copy-btn" id="copyBtn" onclick="copyText()">초안 텍스트 복사하기 →</button>
-</div>`;
+    + '<button class="copy-btn" id="copyBtn" onclick="copyText()">초안 텍스트 복사하기 →</button>'
+    + '</div>';
 
   document.getElementById('resultArea').innerHTML = html;
 }
@@ -504,10 +378,10 @@ function copyText(){
   const {trend, map, industry} = lastResult;
   const recOffice = (map.office||[]).slice(0,3).join(' / ');
   const recLiving = (map.living||[]).join(' / ') || '해당 없음';
-  const text=`[슾가락 뉴스레터 인사이트 초안 — ${industry}]\n\n■ 테마: ${trend.mainTheme}\n${trend.themeDesc}\n\n■ 시즈널 포인트\n${trend.seasonality||'-'}\n\n■ 인사이트\n${trend.newsletterInsight}\n${trend.callout}\n\n■ 추천 미디어 믹스\n프라임오피스: ${recOffice}\n프라임리빙: ${recLiving}\n\n추천 이유: ${map.reason}`;
+  const text = '[슾가락 뉴스레터 인사이트 초안 — ' + industry + ']\n\n■ 테마: ' + trend.mainTheme + '\n' + trend.themeDesc + '\n\n■ 시즈널 포인트\n' + (trend.seasonality||'-') + '\n\n■ 인사이트\n' + trend.newsletterInsight + '\n' + trend.callout + '\n\n■ 추천 미디어 믹스\n프라임오피스: ' + recOffice + '\n프라임리빙: ' + recLiving + '\n\n추천 이유: ' + map.reason;
   navigator.clipboard.writeText(text).then(()=>{
-    const btn=document.getElementById('copyBtn');
-    btn.textContent='✓ 클립보드에 복사됨';
+    const btn = document.getElementById('copyBtn');
+    btn.textContent = '✓ 클립보드에 복사됨';
     btn.classList.add('done');
     setTimeout(()=>{btn.textContent='초안 텍스트 복사하기 →';btn.classList.remove('done');},2000);
   });
